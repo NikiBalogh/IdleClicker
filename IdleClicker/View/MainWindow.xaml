@@ -1,0 +1,33 @@
+﻿<Window x:Class="IdleClicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IdleClicker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid x:Name="gridMoney">
+            <Label x:Name="lblMoney" Content="0" HorizontalAlignment="Center" Margin="0,23,0,0" VerticalAlignment="Top" FontSize="35"/>
+            <Label x:Name="lblMoneyPerSec" Content="0/s" HorizontalAlignment="Center" Margin="0,79,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.49,0.519"/>
+        </Grid>
+        <Grid x:Name="gridGame">
+            <Button x:Name="btnClick" Content="Click Me" HorizontalAlignment="Center" Margin="0,171,0,0" VerticalAlignment="Top" Height="128" Width="152" FontSize="20" Click="btnClick_Click"/>
+            <Button x:Name="btnOpenShop" Content="Shop" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" FontSize="25" Height="55" Width="91" Click="btnOpenShop_Click"/>
+            <Button x:Name="btnResetGame" Content="Reset" HorizontalAlignment="Right" Margin="0,343,10,0" VerticalAlignment="Top" Height="46" Width="104" FontSize="25" Click="btnResetGame_Click"/>
+        </Grid>
+        <Grid x:Name="gridShop" Visibility="Collapsed">
+            <Button x:Name="btnCloseShop" Content="Close" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" FontSize="25" Height="55" Width="91" Click="btnCloseShop_Click"/>
+            <Button x:Name="btnBuyMoneyIncrease" Content="Buy" HorizontalAlignment="Left" Margin="56,122,0,0" VerticalAlignment="Top" Height="58" Width="64" Click="btnBuyMoneyIncreasePerClick_Click" FontSize="18"/>
+            <Label Content="Increase Money Per Click" HorizontalAlignment="Left" Margin="156,134,0,0" VerticalAlignment="Top" FontSize="18"/>
+            <Label x:Name="lblIncreaseMoneyPerClickPrice" Content="Price: 0" HorizontalAlignment="Left" Margin="386,134,0,0" VerticalAlignment="Top" FontSize="18"/>
+            <Button x:Name="btnBuyAutoClicker" Content="Buy" HorizontalAlignment="Left" Margin="56,222,0,0" VerticalAlignment="Top" Height="58" Width="64" Click="btnBuyAutoClicker_Click" FontSize="18"/>
+            <Label Content="Auto Clicker" HorizontalAlignment="Left" Margin="156,234,0,0" VerticalAlignment="Top" FontSize="18"/>
+            <Label x:Name="lblAutoClickerPrice" Content="Price: 0" HorizontalAlignment="Left" Margin="386,234,0,0" VerticalAlignment="Top" FontSize="18"/>
+            <Button x:Name="btnUpgradeAutoClickers" Content="Buy" HorizontalAlignment="Left" Margin="56,322,0,0" VerticalAlignment="Top" Height="58" Width="64" Click="btnBuyUpgradeAutoClicker_Click" FontSize="18"/>
+            <Label Content="Upgrade Auto Clicker" HorizontalAlignment="Left" Margin="156,334,0,0" VerticalAlignment="Top" FontSize="18"/>
+            <Label x:Name="lblUpgradeAutoClickerPrice" Content="Price: 0" HorizontalAlignment="Left" Margin="386,334,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+        </Grid>
+    </Grid>
+</Window>
